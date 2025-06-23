@@ -1,0 +1,347 @@
+2025-06-22 13:52:25,329 6284 INFO ? odoo: Odoo version 18.0 
+2025-06-22 13:52:25,330 6284 INFO ? odoo: Using configuration file at C:\odoo-18.0\odoo-18.0\setup\odoo_config.CONF 
+2025-06-22 13:52:25,330 6284 INFO ? odoo: addons paths: ['C:\\odoo-18.0\\odoo-18.0\\odoo\\addons', 'c:\\users\\user\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo-18.0\\odoo-18.0\\addons', 'c:\\odoo-18.0\\odoo-18.0\\odoo', 'c:\\odoo-18.0\\odoo-18.0\\odoo\\addons'] 
+2025-06-22 13:52:25,330 6284 INFO ? odoo: database: admin@localhost:5432 
+2025-06-22 13:52:25,470 6284 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-06-22 13:52:25,472 6284 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-06-22 13:52:25,772 6284 INFO ? odoo.service.server: HTTP service (werkzeug) running on MacbookPro:8088 
+2025-06-22 13:52:25,815 6284 INFO ? odoo.sql_db: Connection to the database failed 
+2025-06-23 01:53:07,684 15056 INFO ? odoo: Odoo version 18.0 
+2025-06-23 01:53:07,685 15056 INFO ? odoo: Using configuration file at C:\odoo-18.0\odoo-18.0\setup\odoo_config.CONF 
+2025-06-23 01:53:07,685 15056 INFO ? odoo: addons paths: ['C:\\odoo-18.0\\odoo-18.0\\odoo\\addons', 'c:\\users\\user\\appdata\\local\\openerp s.a\\odoo\\addons\\18.0', 'c:\\odoo-18.0\\odoo-18.0\\addons', 'c:\\odoo-18.0\\odoo-18.0\\odoo', 'c:\\odoo-18.0\\odoo-18.0\\odoo\\addons'] 
+2025-06-23 01:53:07,685 15056 INFO ? odoo: database: admin@localhost:5432 
+2025-06-23 01:53:07,853 15056 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-06-23 01:53:07,855 15056 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-06-23 01:53:08,322 15056 INFO ? odoo.service.server: HTTP service (werkzeug) running on MacbookPro:8088 
+2025-06-23 01:53:08,373 15056 INFO ? odoo.sql_db: Connection to the database failed 
+2025-06-23 07:49:08,971 7300 INFO ? odoo: Odoo version 18.0 
+2025-06-23 07:49:08,971 7300 INFO ? odoo: Using configuration file at C:\odoo-18.0\odoo-18.0\config.conf.txt 
+2025-06-23 07:49:08,971 7300 INFO ? odoo: addons paths: ['C:\\odoo-18.0\\odoo-18.0\\odoo\\addons', 'c:\\odoo-18.0\\odoo-18.0\\addons\\18.0', 'c:\\odoo-18.0\\odoo-18.0\\addons', 'c:\\odoo-18.0\\odoo-18.0\\odoo', 'c:\\odoo-18.0\\odoo-18.0\\odoo\\addons'] 
+2025-06-23 07:49:08,971 7300 INFO ? odoo: database: admin@localhost:5432 
+2025-06-23 07:49:09,647 7300 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-06-23 07:49:09,651 7300 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-06-23 07:49:10,687 7300 INFO ? odoo.service.server: HTTP service (werkzeug) running on MacbookPro:8569 
+2025-06-23 07:49:10,728 7300 INFO ? odoo.sql_db: Connection to the database failed 
+2025-06-23 07:49:10,775 7300 INFO ? odoo.sql_db: Connection to the database failed 
+2025-06-23 07:50:30,143 7300 INFO ? odoo.service.server: Initiating shutdown 
+2025-06-23 07:50:30,143 7300 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-06-23 07:50:33,615 1212 INFO ? odoo: Odoo version 18.0 
+2025-06-23 07:50:33,615 1212 INFO ? odoo: Using configuration file at C:\odoo-18.0\odoo-18.0\config.conf.txt 
+2025-06-23 07:50:33,615 1212 INFO ? odoo: addons paths: ['C:\\odoo-18.0\\odoo-18.0\\odoo\\addons', 'c:\\odoo-18.0\\odoo-18.0\\addons\\18.0', 'c:\\odoo-18.0\\odoo-18.0\\addons', 'c:\\odoo-18.0\\odoo-18.0\\odoo', 'c:\\odoo-18.0\\odoo-18.0\\odoo\\addons'] 
+2025-06-23 07:50:33,615 1212 INFO ? odoo: database: admin@localhost:5432 
+2025-06-23 07:50:33,810 1212 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-06-23 07:50:33,812 1212 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-06-23 07:50:34,218 1212 INFO ? odoo.service.server: HTTP service (werkzeug) running on MacbookPro:8569 
+2025-06-23 07:50:34,282 1212 INFO ? odoo.sql_db: Connection to the database failed 
+2025-06-23 07:50:34,326 1212 INFO ? odoo.sql_db: Connection to the database failed 
+2025-06-23 07:50:38,575 1212 INFO ? odoo.service.server: Initiating shutdown 
+2025-06-23 07:50:38,575 1212 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-06-23 09:05:03,023 796 INFO ? odoo: Odoo version 18.0 
+2025-06-23 09:05:03,024 796 INFO ? odoo: Using configuration file at C:\odoo-18.0\odoo-18.0\config.conf.CONF 
+2025-06-23 09:05:03,024 796 INFO ? odoo: addons paths: ['C:\\odoo-18.0\\odoo-18.0\\odoo\\addons', 'c:\\odoo-18.0\\odoo-18.0\\addons\\18.0', 'c:\\odoo-18.0\\odoo-18.0\\addons', 'c:\\odoo-18.0\\odoo-18.0\\odoo', 'c:\\odoo-18.0\\odoo-18.0\\odoo\\addons'] 
+2025-06-23 09:05:03,024 796 INFO ? odoo: database: odoo@localhost:5433 
+2025-06-23 09:05:03,267 796 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-06-23 09:05:03,270 796 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltoimage to generate images from html. 
+2025-06-23 09:05:03,833 796 INFO ? odoo.service.server: HTTP service (werkzeug) running on MacbookPro:8072 
+2025-06-23 09:05:32,397 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:32] "GET / HTTP/1.1" 303 - 1 0.010 0.080
+2025-06-23 09:05:32,703 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:32] "GET /odoo HTTP/1.1" 303 - 2 0.005 0.129
+2025-06-23 09:05:41,668 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:41] "GET /web/database/selector HTTP/1.1" 200 - 2 0.007 8.950
+2025-06-23 09:05:42,765 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:42] "GET /web/static/src/libs/fontawesome/css/font-awesome.css HTTP/1.1" 200 - 1 0.004 0.752
+2025-06-23 09:05:42,767 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:42] "GET /web/static/lib/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 - 1 0.004 0.738
+2025-06-23 09:05:42,780 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:42] "GET /web/static/lib/bootstrap/js/dist/dom/data.js HTTP/1.1" 200 - 1 0.003 0.751
+2025-06-23 09:05:42,781 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:42] "GET /web/static/lib/bootstrap/js/dist/dom/manipulator.js HTTP/1.1" 200 - 1 0.004 0.748
+2025-06-23 09:05:42,793 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:42] "GET /web/static/lib/bootstrap/js/dist/dom/event-handler.js HTTP/1.1" 200 - 1 0.003 0.761
+2025-06-23 09:05:42,793 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:42] "GET /web/static/lib/bootstrap/js/dist/util/index.js HTTP/1.1" 200 - 1 0.003 0.764
+2025-06-23 09:05:43,513 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:43] "GET /web/static/lib/bootstrap/js/dist/util/config.js HTTP/1.1" 200 - 1 0.003 0.432
+2025-06-23 09:05:43,515 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:43] "GET /web/static/lib/bootstrap/js/dist/util/scrollbar.js HTTP/1.1" 200 - 1 0.005 0.401
+2025-06-23 09:05:43,516 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:43] "GET /web/static/lib/bootstrap/js/dist/dom/selector-engine.js HTTP/1.1" 200 - 1 0.004 0.436
+2025-06-23 09:05:43,517 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:43] "GET /web/static/lib/bootstrap/js/dist/util/backdrop.js HTTP/1.1" 200 - 1 0.003 0.422
+2025-06-23 09:05:43,518 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:43] "GET /web/static/lib/bootstrap/js/dist/util/component-functions.js HTTP/1.1" 200 - 1 0.003 0.425
+2025-06-23 09:05:43,524 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:43] "GET /web/static/lib/bootstrap/js/dist/util/focustrap.js HTTP/1.1" 200 - 1 0.004 0.413
+2025-06-23 09:05:44,042 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:44] "GET /web/static/img/logo2.png HTTP/1.1" 200 - 1 0.004 0.201
+2025-06-23 09:05:44,055 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:44] "GET /web/static/src/public/database_manager.js HTTP/1.1" 200 - 1 0.002 0.220
+2025-06-23 09:05:44,060 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:44] "GET /web/static/lib/bootstrap/js/dist/base-component.js HTTP/1.1" 200 - 1 0.003 0.224
+2025-06-23 09:05:44,069 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:44] "GET /web/static/lib/bootstrap/js/dist/modal.js HTTP/1.1" 200 - 1 0.003 0.231
+2025-06-23 09:05:44,738 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:44] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 1 0.004 0.071
+2025-06-23 09:05:45,326 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:05:45] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 1 0.003 0.183
+2025-06-23 09:06:27,765 796 INFO None odoo.service.db: Create database `NSP_dev`. 
+2025-06-23 09:06:30,223 796 INFO None odoo.modules.loading: loading 1 modules... 
+2025-06-23 09:06:30,223 796 INFO None odoo.modules.loading: Loading module base (1/1) 
+2025-06-23 09:06:30,245 796 INFO None odoo.modules.registry: module base: creating or updating database tables 
+2025-06-23 09:06:30,952 796 INFO None odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2025-06-23 09:06:30,953 796 INFO None odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2025-06-23 09:06:30,953 796 INFO None odoo.models: Prepare computation of ir.module.module.views_by_module 
+2025-06-23 09:06:31,206 796 INFO None odoo.models: Prepare computation of res.partner.user_id 
+2025-06-23 09:06:31,206 796 INFO None odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2025-06-23 09:06:31,206 796 INFO None odoo.models: Prepare computation of res.partner.complete_name 
+2025-06-23 09:06:31,206 796 INFO None odoo.models: Prepare computation of res.partner.company_registry 
+2025-06-23 09:06:31,206 796 INFO None odoo.models: Prepare computation of res.partner.commercial_company_name 
+2025-06-23 09:06:31,206 796 INFO None odoo.models: Prepare computation of res.partner.partner_share 
+2025-06-23 09:06:31,274 796 INFO None odoo.models: Prepare computation of res.currency.decimal_places 
+2025-06-23 09:06:31,335 796 INFO None odoo.models: Prepare computation of res.company.uses_default_logo 
+2025-06-23 09:06:31,335 796 INFO None odoo.models: Prepare computation of res.company.logo_web 
+2025-06-23 09:06:31,339 796 INFO None odoo.models: Computing parent_path for table res_company... 
+2025-06-23 09:06:31,402 796 INFO None odoo.models: Prepare computation of res.users.signature 
+2025-06-23 09:06:31,402 796 INFO None odoo.models: Prepare computation of res.users.share 
+2025-06-23 09:06:34,150 796 INFO None odoo.modules.loading: loading base/data/res_bank.xml 
+2025-06-23 09:06:34,187 796 INFO None odoo.modules.loading: loading base/data/res.lang.csv 
+2025-06-23 09:06:34,238 796 INFO None odoo.modules.loading: loading base/data/res_lang_data.xml 
+2025-06-23 09:06:34,326 796 INFO None odoo.modules.loading: loading base/data/res_partner_data.xml 
+2025-06-23 09:06:34,414 796 INFO None odoo.modules.loading: loading base/data/res_currency_data.xml 
+2025-06-23 09:06:35,143 796 INFO None odoo.modules.loading: loading base/data/res_company_data.xml 
+2025-06-23 09:06:35,163 796 INFO None odoo.modules.loading: loading base/data/res_users_data.xml 
+2025-06-23 09:06:36,453 796 INFO None odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2025-06-23 09:06:36,473 796 INFO None odoo.modules.loading: loading base/data/res_country_data.xml 
+2025-06-23 09:06:37,031 796 INFO None odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2025-06-23 09:06:37,057 796 INFO None odoo.modules.loading: loading base/security/base_groups.xml 
+2025-06-23 09:06:37,339 796 INFO None odoo.modules.loading: loading base/security/base_security.xml 
+2025-06-23 09:06:37,547 796 INFO None odoo.modules.loading: loading base/views/base_menus.xml 
+2025-06-23 09:06:37,681 796 INFO None odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2025-06-23 09:06:37,734 796 INFO None odoo.modules.loading: loading base/views/res_config_views.xml 
+2025-06-23 09:06:37,751 796 INFO None odoo.modules.loading: loading base/data/res.country.state.csv 
+2025-06-23 09:06:38,594 796 INFO None odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2025-06-23 09:06:38,795 796 INFO None odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2025-06-23 09:06:38,829 796 INFO None odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2025-06-23 09:06:38,863 796 INFO None odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2025-06-23 09:06:38,920 796 INFO None odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2025-06-23 09:06:38,955 796 INFO None odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2025-06-23 09:06:38,989 796 INFO None odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2025-06-23 09:06:39,026 796 INFO None odoo.modules.loading: loading base/views/ir_model_views.xml 
+2025-06-23 09:06:39,231 796 INFO None odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2025-06-23 09:06:39,266 796 INFO None odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2025-06-23 09:06:39,303 796 INFO None odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2025-06-23 09:06:39,341 796 INFO None odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2025-06-23 09:06:39,377 796 INFO None odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2025-06-23 09:06:39,446 796 INFO None odoo.modules.loading: loading base/views/ir_default_views.xml 
+2025-06-23 09:06:39,482 796 INFO None odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2025-06-23 09:06:39,494 796 INFO None odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2025-06-23 09:06:39,516 796 INFO None odoo.modules.loading: loading base/report/ir_model_report.xml 
+2025-06-23 09:06:39,533 796 INFO None odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2025-06-23 09:06:39,555 796 INFO None odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2025-06-23 09:06:39,592 796 INFO None odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2025-06-23 09:06:39,617 796 INFO None odoo.modules.loading: loading base/views/ir_module_views.xml 
+2025-06-23 09:06:39,693 796 INFO None odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2025-06-23 09:06:39,792 796 INFO None odoo.modules.loading: loading base/data/ir_module_module.xml 
+2025-06-23 09:06:39,878 796 INFO None odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2025-06-23 09:06:39,892 796 INFO None odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2025-06-23 09:06:39,909 796 INFO None odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2025-06-23 09:06:39,940 796 INFO None odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2025-06-23 09:06:39,966 796 INFO None odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2025-06-23 09:06:39,993 796 INFO None odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2025-06-23 09:06:40,028 796 INFO None odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2025-06-23 09:06:40,053 796 INFO None odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2025-06-23 09:06:40,080 796 INFO None odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2025-06-23 09:06:40,110 796 INFO None odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2025-06-23 09:06:40,143 796 INFO None odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2025-06-23 09:06:40,182 796 INFO None odoo.modules.loading: loading base/views/res_company_views.xml 
+2025-06-23 09:06:40,221 796 INFO None odoo.modules.loading: loading base/views/res_lang_views.xml 
+2025-06-23 09:06:40,258 796 INFO None odoo.modules.loading: loading base/views/res_partner_views.xml 
+2025-06-23 09:06:40,395 796 INFO None odoo.modules.loading: loading base/views/res_bank_views.xml 
+2025-06-23 09:06:40,441 796 INFO None odoo.modules.loading: loading base/views/res_country_views.xml 
+2025-06-23 09:06:40,505 796 INFO None odoo.modules.loading: loading base/views/res_currency_views.xml 
+2025-06-23 09:06:40,559 796 INFO None odoo.modules.loading: loading base/views/res_users_views.xml 
+2025-06-23 09:06:40,723 796 INFO None odoo.modules.loading: loading base/views/res_device_views.xml 
+2025-06-23 09:06:40,757 796 INFO None odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2025-06-23 09:06:40,775 796 INFO None odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2025-06-23 09:06:40,793 796 INFO None odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2025-06-23 09:06:40,836 796 INFO None odoo.modules.loading: loading base/security/ir.model.access.csv 
+2025-06-23 09:06:41,113 796 INFO None odoo.modules.loading: Module base loaded in 10.89s, 8171 queries (+8171 other) 
+2025-06-23 09:06:41,113 796 INFO None odoo.modules.loading: 1 modules loaded in 10.89s, 8171 queries (+8171 extra) 
+2025-06-23 09:06:41,164 796 INFO None odoo.modules.loading: updating modules list 
+2025-06-23 09:06:41,164 796 INFO None odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-06-23 09:06:42,184 796 INFO None odoo.modules.loading: loading 12 modules... 
+2025-06-23 09:06:42,184 796 INFO None odoo.modules.loading: Loading module web (2/12) 
+2025-06-23 09:06:42,207 796 INFO None odoo.modules.registry: module web: creating or updating database tables 
+2025-06-23 09:06:43,115 796 INFO None odoo.modules.loading: loading web/security/ir.model.access.csv 
+2025-06-23 09:06:43,144 796 INFO None odoo.modules.loading: loading web/views/webclient_templates.xml 
+2025-06-23 09:06:43,294 796 INFO None odoo.modules.loading: loading web/views/report_templates.xml 
+2025-06-23 09:06:43,433 796 INFO None odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2025-06-23 09:06:43,466 796 INFO None odoo.modules.loading: loading web/views/partner_view.xml 
+2025-06-23 09:06:43,486 796 INFO None odoo.modules.loading: loading web/views/speedscope_template.xml 
+2025-06-23 09:06:43,517 796 INFO None odoo.modules.loading: loading web/views/neutralize_views.xml 
+2025-06-23 09:06:43,532 796 INFO None odoo.modules.loading: loading web/data/ir_attachment.xml 
+2025-06-23 09:06:43,547 796 INFO None odoo.modules.loading: loading web/data/report_layout.xml 
+2025-06-23 09:06:43,618 796 INFO None odoo.modules.loading: Module web loaded in 1.43s, 1097 queries (+1097 other) 
+2025-06-23 09:06:43,618 796 INFO None odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-06-23 09:06:43,800 796 INFO None odoo.modules.registry: module auth_totp: creating or updating database tables 
+2025-06-23 09:06:43,906 796 INFO None odoo.modules.loading: loading auth_totp/security/security.xml 
+2025-06-23 09:06:43,956 796 INFO None odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2025-06-23 09:06:43,973 796 INFO None odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2025-06-23 09:06:43,993 796 INFO None odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2025-06-23 09:06:44,042 796 INFO None odoo.modules.loading: loading auth_totp/views/templates.xml 
+2025-06-23 09:06:44,060 796 INFO None odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2025-06-23 09:06:44,100 796 INFO None odoo.modules.loading: Module auth_totp loaded in 0.48s, 188 queries (+188 other) 
+2025-06-23 09:06:44,100 796 INFO None odoo.modules.loading: Loading module base_import (4/12) 
+2025-06-23 09:06:44,650 796 INFO None odoo.modules.registry: module base_import: creating or updating database tables 
+2025-06-23 09:06:45,535 796 INFO None odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2025-06-23 09:06:45,570 796 INFO None odoo.modules.loading: Module base_import loaded in 1.47s, 874 queries (+874 other) 
+2025-06-23 09:06:45,570 796 INFO None odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-06-23 09:06:45,712 796 INFO None odoo.modules.registry: module base_import_module: creating or updating database tables 
+2025-06-23 09:06:45,808 796 INFO None odoo.modules.loading: loading base_import_module/security/ir.model.access.csv 
+2025-06-23 09:06:45,827 796 INFO None odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml 
+2025-06-23 09:06:45,864 796 INFO None odoo.modules.loading: loading base_import_module/views/ir_module_views.xml 
+2025-06-23 09:06:45,928 796 INFO None odoo.modules.loading: Module base_import_module loaded in 0.36s, 164 queries (+164 other) 
+2025-06-23 09:06:45,928 796 INFO None odoo.modules.loading: Loading module base_setup (6/12) 
+2025-06-23 09:06:46,036 796 INFO None odoo.modules.registry: module base_setup: creating or updating database tables 
+2025-06-23 09:06:46,109 796 INFO None odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2025-06-23 09:06:46,126 796 INFO None odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2025-06-23 09:06:46,181 796 INFO None odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2025-06-23 09:06:46,215 796 INFO None odoo.modules.loading: Module base_setup loaded in 0.29s, 150 queries (+150 other) 
+2025-06-23 09:06:46,215 796 INFO None odoo.modules.loading: Loading module bus (7/12) 
+2025-06-23 09:06:46,484 796 INFO None odoo.modules.registry: module bus: creating or updating database tables 
+2025-06-23 09:06:46,676 796 INFO None odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2025-06-23 09:06:46,709 796 INFO None odoo.modules.loading: Module bus loaded in 0.49s, 165 queries (+165 other) 
+2025-06-23 09:06:46,709 796 INFO None odoo.modules.loading: Loading module web_tour (8/12) 
+2025-06-23 09:06:46,789 796 INFO None odoo.modules.registry: module web_tour: creating or updating database tables 
+2025-06-23 09:06:46,797 796 INFO None odoo.models: Prepare computation of res.users.tour_enabled 
+2025-06-23 09:06:46,932 796 INFO None odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2025-06-23 09:06:46,954 796 INFO None odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2025-06-23 09:06:46,997 796 INFO None odoo.modules.loading: loading web_tour/views/res_users_views.xml 
+2025-06-23 09:06:47,040 796 INFO None odoo.modules.loading: Module web_tour loaded in 0.33s, 188 queries (+188 other) 
+2025-06-23 09:06:47,040 796 INFO None odoo.modules.loading: Loading module html_editor (9/12) 
+2025-06-23 09:06:49,110 796 INFO None odoo.modules.registry: module html_editor: creating or updating database tables 
+2025-06-23 09:06:49,165 796 INFO None odoo.modules.loading: Module html_editor loaded in 2.12s, 42 queries (+42 other) 
+2025-06-23 09:06:49,165 796 INFO None odoo.modules.loading: Loading module iap (10/12) 
+2025-06-23 09:06:49,186 796 INFO None odoo.modules.registry: module iap: creating or updating database tables 
+2025-06-23 09:06:49,325 796 INFO None odoo.modules.loading: loading iap/data/services.xml 
+2025-06-23 09:06:49,340 796 INFO None odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2025-06-23 09:06:49,363 796 INFO None odoo.modules.loading: loading iap/security/ir_rule.xml 
+2025-06-23 09:06:49,392 796 INFO None odoo.modules.loading: loading iap/views/iap_views.xml 
+2025-06-23 09:06:49,485 796 INFO None odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2025-06-23 09:06:49,555 796 INFO None odoo.modules.loading: Module iap loaded in 0.39s, 183 queries (+183 other) 
+2025-06-23 09:06:49,555 796 INFO None odoo.modules.loading: Loading module web_editor (11/12) 
+2025-06-23 09:06:49,905 796 INFO None odoo.modules.registry: module web_editor: creating or updating database tables 
+2025-06-23 09:06:51,229 796 INFO None odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2025-06-23 09:06:51,256 796 INFO None odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2025-06-23 09:06:51,273 796 INFO None odoo.modules.loading: loading web_editor/views/editor.xml 
+2025-06-23 09:06:51,302 796 INFO None odoo.modules.loading: loading web_editor/views/snippets.xml 
+2025-06-23 09:06:51,390 796 INFO None odoo.modules.loading: Module web_editor loaded in 1.83s, 1004 queries (+1004 other) 
+2025-06-23 09:06:51,391 796 INFO None odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-06-23 09:06:51,574 796 INFO None odoo.modules.registry: module web_unsplash: creating or updating database tables 
+2025-06-23 09:06:51,703 796 INFO None odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2025-06-23 09:06:51,779 796 INFO None odoo.modules.loading: Module web_unsplash loaded in 0.39s, 98 queries (+98 other) 
+2025-06-23 09:06:51,779 796 INFO None odoo.modules.loading: 12 modules loaded in 9.59s, 4153 queries (+4153 extra) 
+2025-06-23 09:06:52,352 796 INFO None odoo.modules.loading: Modules loaded. 
+2025-06-23 09:06:52,356 796 INFO None odoo.modules.registry: Registry changed, signaling through the database 
+2025-06-23 09:06:52,358 796 INFO None odoo.modules.registry: Registry loaded in 22.161s 
+2025-06-23 09:06:54,010 796 INFO None odoo.addons.base.models.res_users: Login successful for db:NSP_dev login:admin from 127.0.0.1 
+2025-06-23 09:06:54,029 796 INFO None werkzeug: 127.0.0.1 - - [23/Jun/2025 09:06:54] "POST /web/database/create HTTP/1.1" 303 - 18624 12.937 13.992
+2025-06-23 09:06:54,362 796 INFO NSP_dev odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-06-23 09:06:54,437 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:06:54] "GET /odoo HTTP/1.1" 303 - 7 0.009 0.084
+2025-06-23 09:06:54,985 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:06:54] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 54 0.026 0.348
+2025-06-23 09:06:55,456 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:06:55] "GET /web/binary/company_logo HTTP/1.1" 200 - 5 0.023 0.109
+2025-06-23 09:06:55,650 796 INFO NSP_dev odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/e5711a3/web.assets_frontend_minimal.min.js (id:14) 
+2025-06-23 09:06:55,673 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:06:55] "GET /web/assets/e5711a3/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 15 0.042 0.307
+2025-06-23 09:07:01,484 796 INFO NSP_dev odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/1730ab0/web.assets_frontend.min.css (id:15) 
+2025-06-23 09:07:01,498 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:07:01] "GET /web/assets/1730ab0/web.assets_frontend.min.css HTTP/1.1" 200 - 12 0.044 6.443
+2025-06-23 09:07:03,988 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-06-23 09:07:04,028 796 INFO NSP_dev odoo.addons.base.models.ir_attachment: filestore gc 12 checked, 0 removed 
+2025-06-23 09:07:04,088 796 INFO NSP_dev odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-06-23 09:07:04,102 796 INFO NSP_dev odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-06-23 09:07:04,114 796 INFO NSP_dev odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-06-23 09:07:04,117 796 INFO NSP_dev odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-06-23 09:07:04,145 796 INFO NSP_dev odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-06-23 09:07:04,166 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.178s 
+2025-06-23 09:07:04,170 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-06-23 09:07:04,174 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-06-23 09:07:04,195 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-06-23 09:07:04,201 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.006s 
+2025-06-23 09:07:04,204 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-06-23 09:07:04,207 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-06-23 09:07:08,289 796 INFO NSP_dev odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/eedb771/web.assets_frontend_lazy.min.js (id:16) 
+2025-06-23 09:07:08,537 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:07:08] "GET /web/assets/eedb771/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 12 0.003 6.403
+2025-06-23 09:07:08,667 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:07:08] "GET /web/webclient/translations/1750669628652 HTTP/1.1" 200 - 5 0.003 0.011
+2025-06-23 09:07:55,874 796 INFO NSP_dev odoo.addons.base.models.res_users: Login successful for db:NSP_dev login:admin from 127.0.0.1 
+2025-06-23 09:07:55,901 796 INFO NSP_dev odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-06-23 09:07:55,903 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:07:55] "POST /web/login HTTP/1.1" 303 - 42 0.061 0.852
+2025-06-23 09:07:55,927 796 INFO NSP_dev odoo.addons.base.models.res_device: User 2 inserts device log (dScwy6gjASOhsdXUbfbPKjzD0yjElg7Rq8smIzrOox) 
+2025-06-23 09:07:56,484 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:07:56] "GET /odoo HTTP/1.1" 200 - 76 0.069 0.507
+2025-06-23 09:07:56,878 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:07:56] "GET /web/webclient/translations/d2c56b07ed5ced215bfc7ac9b473a7e7916c5840?lang=en_US HTTP/1.1" 200 - 1 0.002 0.007
+2025-06-23 09:07:56,896 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:07:56] "GET /web/webclient/load_menus/386c0517246da19c35ab26781dd057c1386a12fc91006a46d6ea145a8f2bd50f HTTP/1.1" 200 - 8 0.016 0.010
+2025-06-23 09:08:05,796 796 INFO NSP_dev odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/3303d99/web.assets_web.min.css (id:17) 
+2025-06-23 09:08:05,874 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-06-23 09:08:05,878 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:05] "GET /web/assets/3303d99/web.assets_web.min.css HTTP/1.1" 200 - 15 0.061 8.995
+2025-06-23 09:08:05,914 796 INFO NSP_dev odoo.addons.base.models.ir_attachment: filestore gc 2 checked, 0 removed 
+2025-06-23 09:08:05,974 796 INFO NSP_dev odoo.addons.base.models.res_users: GC'd 1 user log entries 
+2025-06-23 09:08:05,985 796 INFO NSP_dev odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-06-23 09:08:05,993 796 INFO NSP_dev odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-06-23 09:08:05,995 796 INFO NSP_dev odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-06-23 09:08:06,017 796 INFO NSP_dev odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-06-23 09:08:06,037 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.162s 
+2025-06-23 09:08:06,041 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-06-23 09:08:06,044 796 INFO NSP_dev odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-06-23 09:08:12,777 796 INFO NSP_dev odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/eb90d49/web.assets_web_print.min.css (id:18) 
+2025-06-23 09:08:12,791 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:12] "GET /web/assets/eb90d49/web.assets_web_print.min.css HTTP/1.1" 200 - 8 0.035 6.554
+2025-06-23 09:08:21,376 796 INFO NSP_dev odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/abbd01b/web.assets_web.min.js (id:19) 
+2025-06-23 09:08:21,911 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:21] "GET /web/assets/abbd01b/web.assets_web.min.js HTTP/1.1" 200 - 11 0.008 25.079
+2025-06-23 09:08:22,517 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:22] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.007 0.005
+2025-06-23 09:08:22,559 796 INFO NSP_dev odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/7a0abe7/bus.websocket_worker_assets.min.js (id:20) 
+2025-06-23 09:08:22,577 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:22] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 200 - 8 0.006 0.052
+2025-06-23 09:08:22,591 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:22] "GET /web/static/img/odoo-icon-192x192.png HTTP/1.1" 200 - 0 0.000 0.012
+2025-06-23 09:08:22,786 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:22] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.022
+2025-06-23 09:08:22,869 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:22] "GET /odoo/offline HTTP/1.1" 200 - 6 0.005 0.007
+2025-06-23 09:08:22,909 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:22] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.004
+2025-06-23 09:08:23,118 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:23] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.010
+2025-06-23 09:08:23,227 796 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-06-23 09:08:23,363 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:23] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.008 0.009
+2025-06-23 09:08:23,370 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:23] "GET /web/image/res.partner/3/avatar_128?unique=1750644475000 HTTP/1.1" 200 - 7 0.009 0.013
+2025-06-23 09:08:23,382 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:23] "POST /web/action/load HTTP/1.1" 200 - 10 0.024 0.012
+2025-06-23 09:08:23,467 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:23] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 56 0.028 0.038
+2025-06-23 09:08:23,787 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.005
+2025-06-23 09:08:23,832 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:23] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.025 0.024
+2025-06-23 09:08:24,274 796 INFO NSP_dev werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.006 0.479
+2025-06-23 09:08:24,453 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-06-23 09:08:24,762 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2025-06-23 09:08:24,765 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:24,767 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2025-06-23 09:08:24,771 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.013
+2025-06-23 09:08:24,772 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.015
+2025-06-23 09:08:24,775 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:24] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.011
+2025-06-23 09:08:25,071 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-06-23 09:08:25,073 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-06-23 09:08:25,079 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:25,082 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.005
+2025-06-23 09:08:25,088 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /pos_restaurant/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2025-06-23 09:08:25,089 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.007
+2025-06-23 09:08:25,388 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2025-06-23 09:08:25,391 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2025-06-23 09:08:25,392 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2025-06-23 09:08:25,397 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - 0 0.000 0.011
+2025-06-23 09:08:25,402 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.008
+2025-06-23 09:08:25,404 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:25,696 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-06-23 09:08:25,718 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /data_recycle/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2025-06-23 09:08:25,718 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - 0 0.000 0.008
+2025-06-23 09:08:25,719 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /hr/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.009
+2025-06-23 09:08:25,722 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.011
+2025-06-23 09:08:25,724 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:25] "GET /marketing_card/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.009
+2025-06-23 09:08:26,009 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-06-23 09:08:26,028 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-06-23 09:08:26,029 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - 0 0.000 0.005
+2025-06-23 09:08:26,036 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - 0 0.000 0.010
+2025-06-23 09:08:26,038 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2025-06-23 09:08:26,039 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.007
+2025-06-23 09:08:26,347 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2025-06-23 09:08:26,348 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.004
+2025-06-23 09:08:26,351 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.009
+2025-06-23 09:08:26,354 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.011
+2025-06-23 09:08:26,363 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.014
+2025-06-23 09:08:26,364 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/social.png HTTP/1.1" 200 - 0 0.000 0.010
+2025-06-23 09:08:26,656 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-06-23 09:08:26,658 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-06-23 09:08:26,663 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-06-23 09:08:26,666 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:26,674 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2025-06-23 09:08:26,675 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.005
+2025-06-23 09:08:26,970 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.004
+2025-06-23 09:08:26,974 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:26,975 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:26,977 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2025-06-23 09:08:26,985 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.004
+2025-06-23 09:08:26,987 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:26] "GET /project_todo/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2025-06-23 09:08:27,289 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:27] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2025-06-23 09:08:27,289 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:27] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:27,290 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:27] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:27,296 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:27] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.010
+2025-06-23 09:08:27,297 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:27] "GET /base/static/img/icons/sale_amazon.png HTTP/1.1" 200 - 0 0.000 0.006
+2025-06-23 09:08:27,299 796 INFO ? werkzeug: 127.0.0.1 - - [23/Jun/2025 09:08:27] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
