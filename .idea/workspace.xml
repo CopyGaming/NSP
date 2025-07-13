@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9bd0b19-5e5a-491c-87f3-993b19dc0240" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/filestore/TRY/checklist/c7/c70732a4658a469a87e42f359c3c336b90804cac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo.conf.CONF" beforeDir="false" afterPath="$PROJECT_DIR$/odoo.conf.CONF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo.log" beforeDir="false" afterPath="$PROJECT_DIR$/odoo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/controllers/room_booking_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/controllers/room_booking_export.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/data/ir_data_sequence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/data/ir_data_sequence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/data/room_booking_actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/data/room_booking_actions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/hotel_room.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/hotel_room.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/room_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/room_booking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/room_booking_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/room_booking_line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/views/room_booking_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/views/room_booking_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/views/room_chart_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/views/room_chart_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sessions/I2/I2-BF1amAL-pcEXKUJV_paVCpdj6epY_7WrNNCGD-s5XuhBnJNWq6khxHSsKoUPeX-Qm91N42oTXE6Rz0iAE" beforeDir="false" afterPath="$PROJECT_DIR$/sessions/I2/I2-BF1amAL-pcEXKUJV_paVCpdj6epY_7WrNNCGD-s5XuhBnJNWq6khxHSsKoUPeX-Qm91N42oTXE6Rz0iAE" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
