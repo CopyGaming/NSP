@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Kanban View -->
+    <record id="view_hotel_room_chart_kanban" model="ir.ui.view">
+        <field name="name">hotel.room.chart.kanban</field>
+        <field name="model">hotel.room</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <field name="name"/>
+                <field name="room_type"/>
+                <field name="status"/>
+                <field name="floor_id"/>
+                <field name="num_person"/>
+                <field name="color_class"/>
+                <field name="clean_status"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card o_kanban_global_click room-box"
+                             t-att-class="record.color_class.raw_value">
+                            <div class="o_primary">
+                                <strong><field name="name"/></strong>
+                            </div>
+                            <div>Type: <field name="room_type"/></div>
+
+                            <!-- Status dengan warna -->
+                            <div>
+                                <t t-if="record.status.raw_value == 'available'">
+                                    <span class="text-success">Status: <field name="status"/></span>
+                                </t>
+                                <t t-elif="record.status.raw_value == 'reserved'">
+                                    <span class="text-warning">Status: <field name="status"/></span>
+                                </t>
+                                <t t-elif="record.status.raw_value == 'occupied'">
+                                    <span class="text-danger">Status: <field name="status"/></span>
+                                </t>
+                                <t t-else="">
+                                    <span>Status: <field name="status"/></span>
+                                </t>
+                            </div>
+
+                            <div>Floor: <field name="floor_id"/></div>
+                            <div>Persons: <field name="num_person"/></div>
+
+                            <!-- Ikon sapu jika kamar dirty + tombol bersihkan -->
+                            <t t-if="record.clean_status.raw_value == 'dirty'">
+                                <div style="margin-top: 8px;">
+                                    <img t-att-src="'/hotel_management_odoo/static/src/img/broom-icon.png'"
+                                         alt="Needs Cleaning"
+                                         title="Dirty Room - Needs Cleaning"
+                                         style="height:20px;"/>
+                                </div>
+                                <div style="margin-top: 6px;">
+                                    <button type="object"
+                                            name="action_mark_clean"
+                                            class="btn btn-secondary btn-sm"
+                                            style="font-size: 12px; margin-top: 4px;">
+                                        Tandai Sudah Bersih
+                                    </button>
+                                </div>
+                            </t>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Action to Open View -->
+    <record id="action_hotel_room_chart" model="ir.actions.act_window">
+        <field name="name">Room Chart</field>
+        <field name="res_model">hotel.room</field>
+        <field name="view_mode">kanban</field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_room_chart"
+              name="Room Chart"
+              parent="hotel_management_menu_root"
+              action="action_hotel_room_chart"
+              sequence="60"/>
+
+</odoo>

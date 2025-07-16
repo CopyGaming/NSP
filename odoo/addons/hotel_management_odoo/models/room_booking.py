@@ -152,7 +152,7 @@ class RoomBooking(models.Model):
                                    string="Pricelist",
                                    compute='_compute_pricelist_id',
                                    store=True, readonly=False,
-                                   required=True,
+                                   required=False,
                                    tracking=1,
                                    help="If you change the pricelist,"
                                         " only newly added lines"
@@ -483,6 +483,13 @@ class RoomBooking(models.Model):
 
     def action_reserve(self):
         """Button Reserve Function"""
+        ROOM_TYPE_PERSON_MAP = {
+            'redDoorz Room': 1,
+            'redDoorz Deluxe Twin Room': 2,
+            'redDoorz Deluxe Room': 4,
+            'family Room': 4,
+        }
+
         if self.state == 'reserved':
             message = _("Room Already Reserved.")
             return {
@@ -494,12 +501,22 @@ class RoomBooking(models.Model):
                     'next': {'type': 'ir.actions.act_window_close'},
                 }
             }
+
         if self.room_line_ids:
             for room in self.room_line_ids:
-                room.room_id.write({
-                    'status': 'reserved',
-                })
-                room.room_id.is_room_avail = False
+                if room.room_id:
+                    # Ambil nilai sinkron dari booking line
+                    synced_type = room.room_type or room.room_id.room_type
+                    synced_persons = ROOM_TYPE_PERSON_MAP.get(synced_type, 1)
+
+                    # Update ke hotel.room
+                    room.room_id.write({
+                        'status': 'reserved',
+                        'room_type': synced_type,
+                        'num_person': synced_persons,
+                        'is_room_avail': False,
+                    })
+
             self.write({"state": "reserved"})
             return {
                 'type': 'ir.actions.client',
@@ -508,9 +525,11 @@ class RoomBooking(models.Model):
                     'type': 'success',
                     'message': "Rooms reserved Successfully!",
                     'next': {'type': 'ir.actions.act_window_close'},
+                    'reload': True,  # supaya kanban ikut update
                 }
             }
-        raise ValidationError(_("Please Enter Room Details"))
+
+        raise ValidationError(_("Please Enter Room Details."))
 
     def action_cancel(self):
         """
@@ -572,13 +591,16 @@ class RoomBooking(models.Model):
             raise ValidationError(_('Your Invoice is Due for Payment.'))
         self.write({"state": "done"})
 
+    from datetime import datetime
+
     def action_checkout(self):
-        """Button action_heck_out function"""
+        """Button action_check_out function"""
         self.write({"state": "check_out"})
         for room in self.room_line_ids:
             room.room_id.write({
                 'status': 'available',
-                'is_room_avail': True
+                'is_room_avail': True,
+                'clean_status': 'dirty',  # ✅ TAMBAHAN agar status jadi 'dirty'
             })
             room.write({'checkout_date': datetime.today()})
 

@@ -7385,6 +7385,9 @@ class BaseModel(metaclass=MetaModel):
         """
         return False
 
+    def _add_tax_details_in_base_line(self, base_line, company):
+        pass
+
 
 collections.abc.Set.register(BaseModel)
 # not exactly true as BaseModel doesn't have index or count
