@@ -762,3 +762,6 @@ class RoomBooking(models.Model):
             'currency_symbol': self.env.user.company_id.currency_id.symbol,
             'currency_position': self.env.user.company_id.currency_id.position
         }
+
+    def action_print_booking(self):
+        return self.env.ref('hotel_management_odoo.action_report_room_booking').report_action(self)
