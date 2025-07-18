@@ -44,6 +44,26 @@ class RoomBooking(models.Model):
                                  domain="[('type', '!=', 'private'),"
                                         " ('company_id', 'in', "
                                         "(False, company_id))]")
+    reserved_by_id = fields.Many2one('res.users', string='Reserved By')
+    checkin_by_id = fields.Many2one('res.users', string='Check-In By')
+    checkout_by_id = fields.Many2one('res.users', string='Check-Out By')
+    team_id = fields.Many2one('crm.team', string='Sales Team')
+    @api.onchange('state')
+    def action_reserve(self):
+        for rec in self:
+            rec.reserved_by_id = self.env.user
+            rec.state = 'reserved'
+
+    def action_checkin(self):
+        for rec in self:
+            rec.checkin_by_id = self.env.user
+            rec.state = 'check_in'
+
+    def action_checkout(self):
+        for rec in self:
+            rec.checkout_by_id = self.env.user
+            rec.state = 'check_out'
+
     date_order = fields.Datetime(string="Order Date",
                                  required=True, copy=False,
                                  help="Creation date of draft/sent orders,"
@@ -52,7 +72,14 @@ class RoomBooking(models.Model):
     is_checkin = fields.Boolean(default=False, string="Is Checkin",
                                 help="sets to True if the room is occupied")
     ktp_received = fields.Boolean(string='KTP Diterima', default=False)
+    pic_ktp = fields.Binary(string='Foto KTP', attachment=True, default=False)
+    @api.constrains('pic_ktp')
+    def _check_pic_ktp(self):
+        for rec in self:
+            if not rec.pic_ktp:
+                raise ValidationError("Foto KTP wajib diunggah sebelum menyimpan data.")
     deposit_received = fields.Boolean(string='Deposit Diterima', default=False)
+    
     maintenance_request_sent = fields.Boolean(default=False,
                                               string="Maintenance Request sent"
                                                      "or Not",
@@ -160,8 +187,7 @@ class RoomBooking(models.Model):
     currency_id = fields.Many2one(
         string="Currency", help="This is the Currency used",
         related='pricelist_id.currency_id',
-        depends=['pricelist_id.currency_id'],
-    )
+        depends=['pricelist_id.currency_id'],)
     invoice_count = fields.Integer(compute='_compute_invoice_count',
                                    string="Invoice "
                                           "Count",
@@ -450,6 +476,7 @@ class RoomBooking(models.Model):
                         % line.room_id.name
                     )
                 ids.add(line.room_id.id)
+                
 
     def create_list(self, line_ids):
         """Returns a Dictionary containing the Booking line Values"""
@@ -637,6 +664,17 @@ class RoomBooking(models.Model):
                 'res_id': account_move.id,
                 'context': "{'create': False}"
             }
+    
+    def toggle_ktp_received(self):
+        """Button to mark KTP as received"""
+        for rec in self:
+            rec.ktp_received = True
+
+    def toggle_deposit_received(self):
+        """Button to mark Deposit as received"""
+        for rec in self:
+            rec.deposit_received = True
+
 
     def action_view_invoices(self):
         """Method for Returning invoice View"""
@@ -673,6 +711,14 @@ class RoomBooking(models.Model):
                 }
             }
 
+    @api.constrains('ktp_received', 'deposit_received')
+    def _check_ktp_and_deposit_received(self):
+        for rec in self:
+            if rec.state == 'draft':
+                if not rec.ktp_received or not rec.deposit_received:
+                    raise ValidationError(_("Mohon pastikan KTP dan Deposit telah diterima sebelum menyimpan."))
+
+    
     def get_details(self):
         """ Returns different counts for displaying in dashboard"""
         today = datetime.today()
@@ -763,5 +809,7 @@ class RoomBooking(models.Model):
             'currency_position': self.env.user.company_id.currency_id.position
         }
 
+
     def action_print_booking(self):
         return self.env.ref('hotel_management_odoo.action_report_room_booking').report_action(self)
+

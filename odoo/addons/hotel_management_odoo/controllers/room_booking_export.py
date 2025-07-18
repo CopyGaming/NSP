@@ -48,7 +48,7 @@ class RoomBookingExportController(http.Controller):
         workbook.close()
         output.seek(0)
 
-        filename = 'Room_Booking_Report_%s.xlsx' % datetime.now().strftime('%Y%m%d_%H%M%S')
+        filename = f"Room_Booking_Report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
         return request.make_response(
             output.read(),
             headers=[
