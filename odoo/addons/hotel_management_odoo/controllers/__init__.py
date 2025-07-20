@@ -20,3 +20,7 @@
 #
 ###############################################################################
 from . import hotel_management_odoo
+# hotel_management_odoo/controllers/__init__.py
+from . import room_booking_export
+
+

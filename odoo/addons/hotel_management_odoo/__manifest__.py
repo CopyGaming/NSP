@@ -24,7 +24,7 @@
     'version': '18.0.1.1.1',
     'category': 'Industries',
     'summary': """A complete Hotel Management System that cover all areas of 
-     Hotel services""" ,
+     Hotel services""",
     'description': """The module helps you to manage rooms, amenities, 
      services, food, events and vehicles. End Users can book rooms and reserve 
      foods from hotel.""",
@@ -38,6 +38,7 @@
         'security/hotel_management_odoo_security.xml',
         'security/ir.model.access.csv',
         'data/ir_data_sequence.xml',
+        'data/room_booking_actions.xml',
         'views/account_move_views.xml',
         'views/hotel_menu_views.xml',
         'views/hotel_amenity_views.xml',
@@ -46,7 +47,9 @@
         'views/hotel_room_views.xml',
         'views/lunch_product_views.xml',
         'views/fleet_vehicle_model_views.xml',
-        'views/room_booking_views.xml',
+        'views/room_chart_dashboard.xml',  # ⬅️ DIPINDAH KE ATAS
+
+        'views/room_booking_views.xml',  # ⬅️ Sekarang di bawahnya
         'views/maintenance_team_views.xml',
         'views/maintenance_request_views.xml',
         'views/cleaning_team_views.xml',
@@ -59,12 +62,14 @@
         'report/room_booking_reports.xml',
         'report/sale_order_reports.xml',
     ],
+
     'assets': {
         'web.assets_backend': [
             'hotel_management_odoo/static/src/js/action_manager.js',
             'hotel_management_odoo/static/src/css/dashboard.css',
             'hotel_management_odoo/static/src/js/dashboard_action.js',
             'hotel_management_odoo/static/src/xml/dashboard_templates.xml',
+            'hotel_management_odoo/static/src/img/broom-icon.png',
         ],
     },
     'images': ['static/description/banner.jpg'],
@@ -72,4 +77,5 @@
     'installable': True,
     'auto_install': False,
     'application': True,
+    'controllers': ['hotel_management_odoo.controllers'],
 }
