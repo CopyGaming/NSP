@@ -32,8 +32,8 @@ class RoomBooking(models.Model):
     _description = "Hotel Room Reservation"
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
-    name = fields.Char(string="Folio Number", readonly=True, index=True, copy=False,
-                       default="New", help="Name of Folio")
+    name = fields.Char(string='Booking Reference', required=True, readonly=True, default='New')
+
     company_id = fields.Many2one('res.company', string="Company",
                                  help="Choose the Company",
                                  required=True, index=True,
@@ -48,6 +48,7 @@ class RoomBooking(models.Model):
     checkin_by_id = fields.Many2one('res.users', string='Check-In By')
     checkout_by_id = fields.Many2one('res.users', string='Check-Out By')
     team_id = fields.Many2one('crm.team', string='Sales Team')
+
     @api.onchange('state')
     def action_reserve(self):
         for rec in self:
@@ -73,13 +74,15 @@ class RoomBooking(models.Model):
                                 help="sets to True if the room is occupied")
     ktp_received = fields.Boolean(string='KTP Diterima', default=False)
     pic_ktp = fields.Binary(string='Foto KTP', attachment=True, default=False)
-    @api.constrains('pic_ktp')
+
+    @api.constrains('foto_ktp_file', 'ktp_received')
     def _check_pic_ktp(self):
         for rec in self:
-            if not rec.pic_ktp:
+            if rec.ktp_received and not rec.foto_ktp_file:
                 raise ValidationError("Foto KTP wajib diunggah sebelum menyimpan data.")
+
     deposit_received = fields.Boolean(string='Deposit Diterima', default=False)
-    
+
     maintenance_request_sent = fields.Boolean(default=False,
                                               string="Maintenance Request sent"
                                                      "or Not",
@@ -115,7 +118,7 @@ class RoomBooking(models.Model):
                    ('to_invoice', 'To Invoice'),
                    ('invoiced', 'Invoiced'),
                    ], string="Invoice Status",
-        help="Status of the Invoice",copy=False,
+        help="Status of the Invoice", copy=False,
         default='no_invoice', tracking=True)
     hotel_invoice_id = fields.Many2one("account.move",
                                        string="Invoice",
@@ -166,7 +169,7 @@ class RoomBooking(models.Model):
                                         ('cancel', 'Cancelled'),
                                         ('done', 'Done')], string='State',
                              help="State of the Booking",
-                             default='draft', tracking=True,copy=False,)
+                             default='draft', tracking=True, copy=False, )
     user_id = fields.Many2one(comodel_name='res.partner',
                               string="Invoice Address",
                               compute='_compute_user_id',
@@ -187,7 +190,7 @@ class RoomBooking(models.Model):
     currency_id = fields.Many2one(
         string="Currency", help="This is the Currency used",
         related='pricelist_id.currency_id',
-        depends=['pricelist_id.currency_id'],)
+        depends=['pricelist_id.currency_id'], )
     invoice_count = fields.Integer(compute='_compute_invoice_count',
                                    string="Invoice "
                                           "Count",
@@ -260,14 +263,15 @@ class RoomBooking(models.Model):
                                          compute='_compute_amount_untaxed',
                                          help="This is the Total Amount for "
                                               "Fleet", tracking=5)
+    foto_ktp_file = fields.Binary(string="Upload Foto KTP")
+    foto_ktp_filename = fields.Char("Nama File KTP")
 
     @api.model
-    def create(self, vals_list):
-        """Sequence Generation"""
-        if vals_list.get('name', 'New') == 'New':
-            vals_list['name'] = self.env['ir.sequence'].next_by_code(
-                'room.booking')
-        return super().create(vals_list)
+    def default_get(self, fields):
+        res = super().default_get(fields)
+        if 'name' in fields:
+            res['name'] = self.env['ir.sequence'].next_by_code('room.booking')
+        return res
 
     @api.depends('partner_id')
     def _compute_user_id(self):
@@ -294,17 +298,17 @@ class RoomBooking(models.Model):
             order.pricelist_id = order.partner_id.property_product_pricelist
 
     @api.depends('room_line_ids.price_subtotal', 'room_line_ids.price_tax',
-             'room_line_ids.price_total',
-             'food_order_line_ids.price_subtotal',
-             'food_order_line_ids.price_tax',
-             'food_order_line_ids.price_total',
-             'service_line_ids.price_subtotal',
-             'service_line_ids.price_tax', 'service_line_ids.price_total',
-             'vehicle_line_ids.price_subtotal',
-             'vehicle_line_ids.price_tax', 'vehicle_line_ids.price_total',
-             'event_line_ids.price_subtotal', 'event_line_ids.price_tax',
-             'event_line_ids.price_total',
-             )
+                 'room_line_ids.price_total',
+                 'food_order_line_ids.price_subtotal',
+                 'food_order_line_ids.price_tax',
+                 'food_order_line_ids.price_total',
+                 'service_line_ids.price_subtotal',
+                 'service_line_ids.price_tax', 'service_line_ids.price_total',
+                 'vehicle_line_ids.price_subtotal',
+                 'vehicle_line_ids.price_tax', 'vehicle_line_ids.price_total',
+                 'event_line_ids.price_subtotal', 'event_line_ids.price_tax',
+                 'event_line_ids.price_total',
+                 )
     def _compute_amount_untaxed(self, flag=False):
         """Compute total amounts for each booking and generate booking_list for invoice"""
         booking_all_list = []
@@ -351,8 +355,8 @@ class RoomBooking(models.Model):
                         else:
                             for rec in account_move_line:
                                 if rec['product_type'] == 'room' and booking_dict['name'] == rec['name'] \
-                                and booking_dict['price_unit'] == rec['price_unit'] \
-                                and booking_dict['quantity'] != rec['quantity']:
+                                        and booking_dict['price_unit'] == rec['price_unit'] \
+                                        and booking_dict['quantity'] != rec['quantity']:
                                     booking_list.append({
                                         'name': room.room_id.name,
                                         'quantity': booking_dict['quantity'] - rec['quantity'],
@@ -417,7 +421,6 @@ class RoomBooking(models.Model):
 
         return booking_all_list
 
-
     @api.onchange('need_food')
     def _onchange_need_food(self):
         """Unlink Food Booking Line if Need Food is false"""
@@ -476,7 +479,6 @@ class RoomBooking(models.Model):
                         % line.room_id.name
                     )
                 ids.add(line.room_id.id)
-                
 
     def create_list(self, line_ids):
         """Returns a Dictionary containing the Booking line Values"""
@@ -511,10 +513,16 @@ class RoomBooking(models.Model):
     def action_reserve(self):
         """Button Reserve Function"""
         ROOM_TYPE_PERSON_MAP = {
+
             'redDoorz Room': 1,
             'redDoorz Deluxe Twin Room': 2,
             'redDoorz Deluxe Room': 4,
             'family Room': 4,
+
+            'single': 1,
+            'double': 2,
+            'dormitory': 4,
+
         }
 
         if self.state == 'reserved':
@@ -664,7 +672,7 @@ class RoomBooking(models.Model):
                 'res_id': account_move.id,
                 'context': "{'create': False}"
             }
-    
+
     def toggle_ktp_received(self):
         """Button to mark KTP as received"""
         for rec in self:
@@ -674,7 +682,6 @@ class RoomBooking(models.Model):
         """Button to mark Deposit as received"""
         for rec in self:
             rec.deposit_received = True
-
 
     def action_view_invoices(self):
         """Method for Returning invoice View"""
@@ -711,14 +718,14 @@ class RoomBooking(models.Model):
                 }
             }
 
-    @api.constrains('ktp_received', 'deposit_received')
-    def _check_ktp_and_deposit_received(self):
+    @api.constrains('ktp', 'deposit')
+    def _check_ktp_deposit(self):
+        if self.env.context.get('skip_cek_validasi'):
+            return
         for rec in self:
-            if rec.state == 'draft':
-                if not rec.ktp_received or not rec.deposit_received:
-                    raise ValidationError(_("Mohon pastikan KTP dan Deposit telah diterima sebelum menyimpan."))
+            if not rec.ktp or not rec.deposit:
+                raise ValidationError("Mohon pastikan KTP dan Deposit telah diterima sebelum menyimpan.")
 
-    
     def get_details(self):
         """ Returns different counts for displaying in dashboard"""
         today = datetime.today()
@@ -809,7 +816,25 @@ class RoomBooking(models.Model):
             'currency_position': self.env.user.company_id.currency_id.position
         }
 
-
     def action_print_booking(self):
         return self.env.ref('hotel_management_odoo.action_report_room_booking').report_action(self)
+
+    @api.model
+    def create(self, vals):
+        # Jangan validasi KTP dan Deposit di sini
+        return super(RoomBooking, self).create(vals)
+
+    def write(self, vals):
+        # Jangan validasi KTP dan Deposit di sini
+        return super(RoomBooking, self).write(vals)
+
+    def action_cek(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'res_model': 'hotel.room',
+            'view_mode': 'kanban',
+            'target': 'current',
+            'name': 'Room Chart',
+        }
+
 

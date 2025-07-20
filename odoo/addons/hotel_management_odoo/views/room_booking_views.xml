@@ -6,6 +6,7 @@
         <field name="model">room.booking</field>
         <field name="arch" type="xml">
             <form>
+                <field name="name" readonly="1"/>
                 <header>
                     <button name="action_reserve" string="Reserve" type="object"
                             class="btn-primary" invisible="state != 'draft'"/>
@@ -25,10 +26,12 @@
                     <button name="action_cancel" string="Cancel" type="object"
                             class="btn-secondary"
                             invisible="state not in ['draft','reserved']"/>
-                    <button name="%(action_hotel_room_chart)d"
+                    <button name="action_cek"
                             string="Cek"
-                            type="action"
-                            class="btn-primary"/>
+                            type="object"
+                            class="btn-primary"
+                            context="{'skip_cek_validasi': True}"/>
+
 
                     <field name="state" widget="statusbar" statusbar_visible="draft,check_in,check_out,done"/>
                     <field name="invoice_status" widget="statusbar" invisible="1"/>
@@ -55,14 +58,27 @@
                         <field name="duration_visible" invisible="1"/>
                         <field name="invoice_button_visible" invisible="1"/>
                         <field name="maintenance_request_sent" invisible="1"/>
+                        <!-- Hilangkan pricelist_id kalau tidak dipakai -->
                         <group>
                             <field name="partner_id" widget="res_partner_many2one"
                                    context="{'res_partner_search_mode': 'customer', 'show_address': 1, 'show_vat': True}"
-                                   options="{'always_reload': True}"/>
+                                   options="{'always_reload': True}"
+                                   required="0"/>
                             <field name="user_id" domain="[('parent_id','=',partner_id)]"
                                    context="{'default_type':'invoice'}"
                                    options="{'always_reload': True}"/>
                         </group>
+
+                         <group>
+                             <field name="deposit_received"
+                                    required="0"/>
+                         </group>
+
+                        <group string="Verifikasi Identitas">
+                            <field name="ktp_received"/>
+                            <field name="foto_ktp_file" filename="foto_ktp_filename" widget="binary"/>
+                        </group>
+
                         <group>
                             <field name="date_order"/>
                             <field name="need_service" invisible="state not in ['check_in']"/>
@@ -115,7 +131,9 @@
         </field>
     </record>
 
+
     <!-- Tree View -->
+    <!-- Tree View (Pastikan pakai <list>, bukan <tree>) -->
     <record id="room_booking_view_tree" model="ir.ui.view">
         <field name="name">room.booking.view.tree</field>
         <field name="model">room.booking</field>
@@ -125,6 +143,8 @@
                 <field name="partner_id"/>
                 <field name="date_order"/>
                 <field name="state"/>
+    <!-- Tambah tombol Cek hanya di list -->
+
             </list>
         </field>
     </record>
@@ -143,16 +163,4 @@
     <!-- Menu -->
     <menuitem id="room_booking_menu" name="Reservation" sequence="10"
               parent="hotel_management_menu_root" action="room_booking_action"/>
-
-    <!-- Server Action untuk Print -->
-    <record id="action_print_booking_excel_server" model="ir.actions.server">
-        <field name="name">Print Booking Excel</field>
-        <field name="model_id" ref="model_room_booking"/>
-        <field name="binding_model_id" ref="model_room_booking"/>
-        <field name="state">code</field>
-        <field name="code">
-            action = env.ref('hotel_management_odoo.action_print_room_booking_excel').read()[0]
-        </field>
-        <field name="binding_view_types">list</field>
-    </record>
 </odoo>

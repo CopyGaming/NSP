@@ -39,6 +39,7 @@
         'security/ir.model.access.csv',
         'data/ir_data_sequence.xml',
         'data/room_booking_actions.xml',
+        'data/room_booking_data.xml',
         'views/account_move_views.xml',
         'views/hotel_menu_views.xml',
         'views/hotel_amenity_views.xml',

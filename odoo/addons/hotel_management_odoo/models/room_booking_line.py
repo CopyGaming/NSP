@@ -6,9 +6,21 @@
 #    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
 #    Author: ADARSH K (odoo@cybrosys.com)
 #
-#    You can modify it under the terms of the GNU LESSER
-#    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Lesser General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
 #
+
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#    GNU Lesser General Public License for more details.
+#
+#    You should have received a copy of the GNU Lesser General Public License
+#    along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+
 ###############################################################################
 
 from odoo import api, fields, models, tools, _
@@ -38,12 +50,15 @@ class RoomBookingLine(models.Model):
     checkout_date = fields.Datetime(string="Check Out", required=True)
 
     room_id = fields.Many2one('hotel.room', string="Room", required=True)
+
     room_type = fields.Selection([
         ('redDoorz Room', 'RedDoorz Room'),
         ('redDoorz Deluxe Twin Room', 'RedDoorz Deluxe Twin Room'),
         ('redDoorz Deluxe Room', 'RedDoorz Deluxe Room'),
         ('family Room', 'Family Room')],
         string="Room Type")
+
+
 
     uom_qty = fields.Float(string="Duration", readonly=True)
     uom_id = fields.Many2one('uom.uom', default=_set_default_uom_id, string="Unit of Measure", readonly=True)
@@ -62,11 +77,12 @@ class RoomBookingLine(models.Model):
 
     @api.onchange('room_id')
     def _onchange_room_id(self):
-        self.room_type = self.room_id.room_type
+        self.room_type = self.room_id.room_type  # tanpa .id karena ini Selection
         self._onchange_room_type()
 
     @api.onchange('room_type')
     def _onchange_room_type(self):
+
         # Tidak lakukan apa pun, biarkan user isi manual
         pass
 
@@ -76,6 +92,20 @@ class RoomBookingLine(models.Model):
             if rec.room_type and (rec.price_unit is None or rec.price_unit <= 0.0):
                 raise ValidationError(
                     _("Harga sewa (Rent) wajib diisi."))
+
+        if self.room_type == 'single':
+            self.price_unit = 45000000
+        elif self.room_type == 'double':
+            self.price_unit = 90000000
+        elif self.room_type == 'dormitory':
+            self.price_unit = 110000000
+
+        # Tambahan: update ke hotel.room
+        if self.room_id:
+            person_map = {'single': 1, 'double': 2, 'dormitory': 4}
+            self.room_id.room_type = self.room_type
+            self.room_id.num_person = person_map.get(self.room_type, 1)
+
 
     @api.onchange("checkin_date", "checkout_date")
     def _onchange_checkin_date(self):
@@ -92,9 +122,12 @@ class RoomBookingLine(models.Model):
     def _compute_price_subtotal(self):
         for line in self:
             base_line = line._prepare_base_line_for_taxes_computation()
+
+            # Filter hanya tax yang valid dan bukan group
             base_line['tax_ids'] = base_line.get('tax_ids', self.env['account.tax']).filtered(
-                lambda tax: tax.amount_type != 'group'
+                lambda tax: tax.amount_type != 'group' and tax.rounding and tax.rounding > 0.0
             )
+
             if base_line['tax_ids']:
                 self.env['account.tax']._add_tax_details_in_base_line(base_line, self.env.company)
                 line.price_subtotal = base_line['tax_details']['raw_total_excluded_currency']
@@ -117,6 +150,9 @@ class RoomBookingLine(models.Model):
 
     @api.onchange('checkin_date', 'checkout_date', 'room_id')
     def onchange_checkin_date_conflict(self):
+
+        # Check room conflict
+
         bookings = self.env['room.booking'].search([('state', 'in', ['reserved', 'check_in'])])
         for booking in bookings:
             for rec_line in booking.room_line_ids:

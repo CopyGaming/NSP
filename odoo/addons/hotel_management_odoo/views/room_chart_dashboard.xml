@@ -44,7 +44,11 @@
                             <div>Floor: <field name="floor_id"/></div>
                             <div>Persons: <field name="num_person"/></div>
 
+
                             <!-- Ikon sapu jika kamar dirty + tombol bersihkan -->
+
+                            <!-- Ikon sapu jika kamar dirty -->
+
                             <t t-if="record.clean_status.raw_value == 'dirty'">
                                 <div style="margin-top: 8px;">
                                     <img t-att-src="'/hotel_management_odoo/static/src/img/broom-icon.png'"
@@ -52,7 +56,7 @@
                                          title="Dirty Room - Needs Cleaning"
                                          style="height:20px;"/>
                                 </div>
-                                <div style="margin-top: 6px;">
+                                 <div style="margin-top: 6px;">
                                     <button type="object"
                                             name="action_mark_clean"
                                             class="btn btn-secondary btn-sm"

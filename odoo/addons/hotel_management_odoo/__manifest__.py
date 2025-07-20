@@ -47,8 +47,7 @@
         'views/hotel_room_views.xml',
         'views/lunch_product_views.xml',
         'views/fleet_vehicle_model_views.xml',
-        'views/room_chart_dashboard.xml',  # ⬅️ DIPINDAH KE ATAS
-
+        'views/room_chart_dashboard.xml',  # ⬅️ DIPINDAH KE ATAS,
         'views/room_booking_views.xml',  # ⬅️ Sekarang di bawahnya
         'views/maintenance_team_views.xml',
         'views/maintenance_request_views.xml',
@@ -61,6 +60,7 @@
         'views/reporting_views.xml',
         'report/room_booking_reports.xml',
         'report/sale_order_reports.xml',
+        'views/room_chart_dashboard.xml',
     ],
 
     'assets': {
