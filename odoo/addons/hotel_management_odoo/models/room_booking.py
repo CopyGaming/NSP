@@ -265,6 +265,27 @@ class RoomBooking(models.Model):
                                               "Fleet", tracking=5)
     foto_ktp_file = fields.Binary(string="Upload Foto KTP")
     foto_ktp_filename = fields.Char("Nama File KTP")
+    payment_method = fields.Char(string="Payment Method")
+    booking_resource = fields.Char(string="Booking Resource")
+    member_club = fields.Float(string="Member Club")
+    assured_stay = fields.Float(string="Assured Stay")
+    red_lite = fields.Float(string="Red Lite")
+    platform_fee = fields.Float(string="Platform Fee")
+    tip_staff = fields.Float(string="Tip For Staff")
+    room_upgrade = fields.Float(string="Room Upgrade")
+    early_late_co = fields.Boolean(string="Early CI/Late CO")
+    travel_protection = fields.Boolean(string="Travel Protection")
+    breakfast = fields.Boolean(string="Breakfast")
+    keterangan = fields.Char(string="Keterangan")
+    duration_nights = fields.Integer(string='Number of Nights', compute='_compute_duration', store=True)
+
+    @api.depends('checkin_date', 'checkout_date')
+    def _compute_duration(self):
+        for rec in self:
+            if rec.checkin_date and rec.checkout_date:
+                rec.duration_nights = (rec.checkout_date - rec.checkin_date).days or 1
+            else:
+                rec.duration_nights = 1
 
     @api.model
     def default_get(self, fields):
