@@ -2,61 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9bd0b19-5e5a-491c-87f3-993b19dc0240" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/odoo-18.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.tx/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/point_of_sale/tools/posbox/overwrite_before_init/home/pi/.inputrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/point_of_sale/tools/posbox/overwrite_before_init/home/pi/.vimrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/point_of_sale/tools/posbox/overwrite_before_init/home/pi/.xsession" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/hotel_room_dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/NSP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NSP2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot-dom/helpers/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot-dom/helpers/dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot-dom/helpers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot-dom/helpers/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot-dom/hoot-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot-dom/hoot-dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/expect.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/expect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/job.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/job.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/runner.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/runner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/suite.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/suite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/core/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/hoot_utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/hoot_utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/tests/hoot-dom/dom.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/tests/hoot-dom/dom.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/tests/hoot-dom/events.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/tests/hoot-dom/events.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/tests/hoot_utils.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/tests/hoot_utils.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/ui/hoot_debug_toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/ui/hoot_debug_toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/hoot/ui/hoot_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/hoot/ui/hoot_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/lib/owl/owl.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/lib/owl/owl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/core/errors/error_dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/core/errors/error_dialogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/core/model_field_selector/model_field_selector_popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/core/model_field_selector/model_field_selector_popover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/legacy/js/public/public_root.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/legacy/js/public/public_root.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/search/search_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/search/search_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/views/fields/binary/binary_field.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/views/fields/binary/binary_field.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/views/fields/dynamic_widget/dynamic_model_field_selector_char.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/views/fields/dynamic_widget/dynamic_model_field_selector_char.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/webclient/actions/action_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/webclient/actions/action_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/webclient/actions/reports/report.scss" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/webclient/actions/reports/report.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/src/webclient/actions/reports/report_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/src/webclient/actions/reports/report_tables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/_framework/mock_server/mock_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/_framework/mock_server/mock_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/_framework/mock_server/mock_server.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/_framework/mock_server/mock_server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/_framework/start.hoot.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/_framework/start.hoot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/core/orm_service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/core/orm_service.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/search/search_bar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/search/search_bar.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/search/search_panel_desktop.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/search/search_panel_desktop.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/search/with_search.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/search/with_search.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/tours/user_switch_tour.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/tours/user_switch_tour.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/views/fields/binary_field.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/views/fields/binary_field.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/views/list/list_view.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/views/list/list_view.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/views/view_dialogs/select_create_dialog.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/views/view_dialogs/select_create_dialog.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/webclient/actions/url_action.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/webclient/actions/url_action.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/web/static/tests/webclient/actions/window_action.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/web/static/tests/webclient/actions/window_action.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.conf.CONF" beforeDir="false" afterPath="$PROJECT_DIR$/odoo.conf.CONF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/odoo.conf.CONF" beforeDir="false" afterPath="$PROJECT_DIR$/odoo.conf.CONF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/odoo.log" beforeDir="false" afterPath="$PROJECT_DIR$/odoo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/controllers/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/controllers/room_booking_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/controllers/room_booking_export.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/room_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/room_booking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/service_booking_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/models/service_booking_line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/views/room_booking_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/odoo/addons/hotel_management_odoo/views/room_booking_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/2V/2V3JBO8GPqMDcqP5OHvl0H5XGR4mll83mGK6e7lA5xbqJAvG-Cc_18liMcBa_7IDQiVkIPG3FRPBXCJv7etf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/6X/6x2zZymv_DEeEhUq3V6Dl0gZ8TOcv3ch9VV76mDCN8VfsXoMXbnWc6SxCe2hUyekJtKcC4g6wpQPHeI5hkTW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/7o/7oer53kRlDRhOHJaO86tNmm0KqyTvZEerC9ohusCQLPtVj1sY2NFGZePsx70cYp3HKBtAVQWZC6bfbWFrPH_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/9P/9PZtJp6XVAsRLoDIeXZ_iOnemQw-SQqNp6f4UtMqVWcUinFaS3BZsEjabvlf9PHybeQ4JI2t4TUdxhp9al-5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/CN/CNGSoQt4U0Njb9Xf_5NemEpiu_VziFJNXDRpXN6orQ3QbPl2qcJwYN6HY1cipEHZcTViXVizx1NKVj2XiyVh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/Do/Do1IcBYTVO4CZVTgPQ5PJawnyAEoFcimoZSALn0lhye7MRO4R8C86ISmUCiTgiKhKL949p2Ehypv44gCe7JU" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/FG/FGfiAWxFHlO9MC6puQ1P5_0cqqaoh3OSj76N7pKfZDaZvTD_NA5hOKFkLPKdICOwJ1JYyCm0yVfJRm-D4k65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/HU/HUziy-qzxD16XX1x9yMrUGfke_U1M1SJMUDrKmoqBUubrRq6bBELIc9obfvVTr6Qj7Z2rxN7Bgy9y-Qx5X1r" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/If/IfxxK2IHjA0nMFX_YLJa_QYa7t-ZpsGBXtk9UxonZ7wqtMGw-0dlw6HkpYSaGtBJRp44cUfUgE7f7UryWEYV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/JL/JLHCpa89fbLeUSeGaIGfpZSKCi8K-f1jbdu2h2-zByGiChG7Nc7FJH1LQTdYh8DjtINYb3m07vMI60Acl2BO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/Js/Js2rRMD-eHXfqjEypTVwIu418CrKagFsLqqXZTfty8Nq2DnOzJq8KI98dkLZl04XXycfMMAktte7SYzJ4Pmb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/L-/L-J5Vz5EsnjH8BptgWrCWknjMSQp8jq53aGPgBiCViDcomADgoH0RnomI5HvzrtW7Hp75IyYcrRuLxTEB-5T" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/Xd/XdgBpATyitSRWjRBM99rMF_O57PrZWh2p8xnUuk7TBlFgribtMsFEoPvMuFYxEi6W6UBo_bJyNsEaMsVqhdO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/Xl/XlyMKm3s3T4vdZ7P6huPj6fD-ejYY-aegGVXmDq2czi3rEnBJeJqtg5VNa8cC0D-Xf0imrewg8EProULX1ds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/hF/hFFW1slyVTMYwpTk6MlucPdY3ZEjJDd1FndNr1-nXq2qIflfZpj4GPaP5zNfjjKw5uviOT2WdMnPqKSSnKOH" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/hj/hjtpeQJAnCW5ffvILcsql0JgsixsLjFZHgUdvwmxo4kY0RKOZv7QTvB0zvvAYv3qFBZwNwTynu4bqK1rvrSs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/o6/o6FHVR4uXAGQAiRQ3RnwLH3QGlLkC4EZhCe02N5o_nXFPg2fAqCUqSto6zWPERnj08H9ILekjDJ_G0kCVk6B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/qY/qYOS70cnneQ7ja1FXe8l6VKc4Nmp2PKx_JsgtmO-cyzHf5gR0fbYH-J2562j1QTIjYY0hc6MOoKyHjsYNN7h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/u4/u4BcEFD3bJcZ6Pmx4GWG2k5keQ7FWZERKJVPd-ukC5nYlCcpEh08IM_kt-8EiSETElEtoLls9g-HZRF1GEm_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions/uU/uUcpajDCY9VhSH2LN9pP6Hc3arJoYYi3ITDV_PjKmOx7IbwYZ4Nv4fuA-KLwyjXvoanQH0prjBW7WrX8z-L5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +89,17 @@
       <updated>1750664202101</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
